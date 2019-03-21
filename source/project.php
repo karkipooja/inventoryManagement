@@ -1,64 +1,77 @@
-<link href="../assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<?php ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <script type="text/javascript">
+            baseurl = "<?php echo baseurl; ?>";
+            user = "<?php echo !empty($data['user'])?$data['user']:''; ?>";
+        </script> -->
+        <!-- <link rel="shortcut icon" href="<?php echo baseurl ?>/Assets/Img/logo.png"/> -->
+        <link type="text/css" rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="header">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#interests">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <!-- <img class="img img-responsive" id="logo" src="<?php echo baseurl ?>/Assets/Img/logo.png"/> -->
+                        </a> 
+                    </div>
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
-	<div class="container">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#"><span>Logo</span> Here</a>
+                    <div class="nav navbar-nav collapse navbar-collapse navbar-right" id="interests">
+                        <!-- <?php if (isset($data['interest'])) { ?>
+                            <ul clasS="nav nav-pills navbar-right" style="color:white">
+                                <?php
+                                $mainkeys = array_keys($data);
+                                for ($i = 0; $i < count($mainkeys); $i++) {
+                                    if (@$mainkeys[$i] == 'interest') {
+                                        $cat = $data[$mainkeys[$i]];
+                                        $key = array_keys($cat);
+                                        for ($j = 0; $j < count($key); $j++) {
+                                            foreach ($cat[$key[$j]] as $ky => $value) {
+                                                if ($ky == 'category_id')
+                                                    $id = $value;
+                                                else if ($ky == 'isActive')
+                                                    ;
+                                                else
+                                                    $name = $value;
+                                            }
+                                            ?> <li><button class="btn btn-primary interest"  onclick="getCatNews(<?php echo $id; ?>)"><?php echo $name; ?></button></li>
+                                            <?php
+                                            //print_r($cat[$key[$j]]);
+                                        }
+                                    }
+                                }
+                                ?> -->
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="btn btn-primary" href="#">News Group</a></li>
+                                        <li><a class="btn btn-success"  href="#">Profile</a></li>
+                                        <li><a class="btn btn-danger" href="#">Logout</a></li>
+                                    </ul>
+                                </li> 
 
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li> 
-	   <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
-      </div>
-    </li>
-    </ul>
-  </div>
-	</div>
-</nav>
+                            </ul>
+                            <?php
+                            //print_r($data['interest']); 
+                        }
+                        ?>
+                    </div>
 
-<div class="banner">
-	<div class="container">
-	<div class="banner-text">
-	<div class="banner-heading">
-	Glad to see you here !
-	</div>
-	<div class="banner-sub-heading">
-	Here goes the secondary heading on hero banner
-	</div>
-	<button type="button" class="btn btn-warning text-dark btn-banner">Get started</button>
-	</div>
-	</div>
-</div>
-<section id="about">
-<div class="container">
-	<div class="text-intro">
-	<h2>About Us</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-	</div>
-</div>
-</section>
+                </div>
+                </div>
+                </div>
+            </nav>
+        </header>	
+        <div class="container-fluid" id="center">
+

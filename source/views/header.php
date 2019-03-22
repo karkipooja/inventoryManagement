@@ -7,6 +7,7 @@
   <?php require_once ("../config/dbConfig.php"); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+  <link href="../../assets/css/bootstrap-glyphicons.css" rel="stylesheet">
   <script src="../../assets/js/jQuery.js"></script>
   <script src="../../assets/js/bootstrap.min.js"></script>
 </head>
@@ -38,14 +39,14 @@
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <a class="nav-link dropdown-toggle" id="menu1" data-toggle="dropdown">Tutorials
+                <a class="nav-link dropdown-toggle" id="menu1" data-toggle="dropdown">Inventory
                   <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                  <li role="presentation" class="btn-link"><a role="menuitem" href="#">HTML</a></li>
-                  <li role="presentation" class="btn-link"><a role="menuitem" href="#">CSS</a></li>
-                  <li role="presentation" class="btn-link"><a role="menuitem" href="#">JavaScript</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation" class="btn-link"><a role="menuitem" href="#">About Us</a></li>
+                  <li role="presentation" class="btn-link"><a role="menuitem" href="./veg.php">Veg</a></li>
+                  <li role="presentation" class="btn-link"><a role="menuitem" href="./nonVeg.php">Non-Veg</a></li>
+                  <!-- <li role="presentation" class="btn-link"><a role="menuitem" href="#">JavaScript</a></li> -->
+                  <!-- <li role="presentation" class="divider"></li> -->
+                  <!-- <li role="presentation" class="btn-link"><a role="menuitem" href="#">About Us</a></li> -->
                 </ul>
               </div>
             </li>

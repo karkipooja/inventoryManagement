@@ -80,7 +80,7 @@ function selectAllWhere($table, $cond)
 
 
 /**
- * select a single field from table*
+ * select a single field from table
  * @param array $field is a field Name.
  * @param string $table is a string with table name ex "user"
  * @param string $con is condition to pass 
@@ -93,7 +93,7 @@ function selectFieldWhere($table, $field, $cond)
 
 
 /**
- * select required fields from table*
+ * select required fields from table 
  * @param array $fields is an array of diffent field Names. example ['abc','bac']
  * @param string $table is a string with table name ex "user"
  * @param string $con is condition to pass 
@@ -106,7 +106,7 @@ function selectFieldsWhere($table, $fields, $con)
 
 
 /**
- * insert into is a common query builder for insert data into a table*
+ * insert into is a common query builder for insert data into a table
  * @param array $value is an array of diffent values. example ['abc','bac']
  * @param string $table is a string with table name ex "user"
  */
@@ -117,7 +117,7 @@ function insertInto($value = [], $table = "")
 }
 
 /**
- * insert into is a common query builder for insert data into specific fields in a table*
+ * insert into is a common query builder for insert data into specific fields in a table
  * @param array $fields is an array of diffent field name. example ['email','password']
  * @param array $values is an array of diffent values. example ['abc','bac']
  * @param string $table is a string with table name ex "user"
@@ -130,7 +130,7 @@ function insertIntoFields($fields, $values, $table)
 
 
 /**
- * insert into is a common query builder for insert data into specific fields in a table*
+ * insert into is a common query builder for insert data into specific fields in a table
  * @param string $field is a string of field name. example 'email'
  * @param array $value is a string of field values. example 'abc@ac.com'
  * @param string $table is a string with table name ex "user"

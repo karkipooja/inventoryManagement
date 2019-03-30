@@ -27,6 +27,9 @@ function insertRecord()
     }
 }
 
+/**
+ * function used for excute sql queries.
+ */
 function excuteQuery($qry)
 {
     if ($GLOBALS['conn']->query($qry))
@@ -38,6 +41,10 @@ function excuteQuery($qry)
         return false;
     }
 }
+
+/**
+ * function used to return response from sql query
+ */
 
 function getQueryResponse($qry)
 {
@@ -101,6 +108,7 @@ function selectFieldWhere($table, $field, $cond)
 function selectFieldsWhere($table, $fields, $con)
 {
     $qry = "select " . implode(',', $fields) . " from $table where $con";
+    //implode convert an array to string with patterns provided ex: ['email','name']==> (email,name)
     return getQueryResponse($qry);
 }
 

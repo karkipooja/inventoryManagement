@@ -15,8 +15,8 @@ we have done database connectivity with mysqli object oriented.
 | :------------------------------------------ | :------------------------------------------------------------------------------------ | :---------------------------- |
 | selectAll(\$table)                          | select a all fields from table with out condition                                     | An Associate Array of result. |
 | selectAllWhere($table,$cond)                | select a all fields from table where cond exists                                      | An Associate Array of result. |
-| selectFieldWhere($table, $field, $cond)    | select a single field from table                                                      | An Associate Array of result. |
-| selectFieldsWhere($table, $fields, $con)   | select only required fields from table                                                | An Associate Array of result. |
+| selectFieldWhere($table, $field, \$cond)    | select a single field from table                                                      | An Associate Array of result. |
+| selectFieldsWhere($table, $fields, \$con)   | select only required fields from table                                                | An Associate Array of result. |
 | insertInto($value, $table)                  | insert into is a common query builder for insert data into a table                    | True/False                    |
 | insertIntoFields($fields, $values, \$table) | insert into is a common query builder for insert data into specific fields in a table | True/False                    |
 | updateField($field, $table, $value, $cond)  | insert into is a common query builder for insert data into specific fields in a table | True/False                    |
@@ -25,7 +25,7 @@ we have done database connectivity with mysqli object oriented.
 
 And here is a simple example to get you started:
 
-```
+```html
 <?php
     $title="Home";
     require("header.php");
@@ -60,5 +60,49 @@ And here is a simple example to get you started:
 
      
 ?>
+```
 
+## Uses
+
+Please refer following example to display data in view.
+
+```html
+<?php
+$title = "Users";
+require ("header.php");
+?>
+<div class="container">
+  <h2>Users</h2>
+  <p>The list of users inside the table.</p>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        $result = selectAll("users"); // all users in table.
+        $i = 1;
+        foreach ($result as $user) //$user is an single user returned by sql query
+        {
+        ?>
+        <tr>
+          <td>1</td>
+          <td><?php echo $user['firstName']; ?></td>
+          <td><?php echo $user['lastName']; ?></td>
+          <td><?php echo $user['email']; ?></td>
+        </tr>
+        <?php
+              }
+              $i++;
+              ?>
+      </tbody>
+    </table>
+  </div>
+</div>
 ```

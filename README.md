@@ -12,3 +12,17 @@ we have done database connectivity with mysqli object oriented.
         | selectAll($table) | select a all fields from table with out condition | string $table is a string with table name ex "user" 
         | selectAllWhere($table,$cond) | select a all fields from table where cond exists | $table is a string with table name ex "user"
         $con is condition to pass
+### Components
+
+| Name                     | Status | Notes |
+| :----------------------- | :----- | :---- |
+| ActivityIndicator        | ✓      |  |
+| ART                      | ✓      |  |
+| Button                   | ✓      |  |
+| CheckBox                 | ✓      |  |
+| FlatList                 | ✓      |  |
+| Image                    | ✓      | Missing multiple sources ([#515](https://github.com/necolas/react-native-web/issues/515)) and HTTP headers ([#1019](https://github.com/necolas/react-native-web/issues/1019)). |
+| ImageBackground          | ✓      |  |
+| KeyboardAvoidingView     | (✓)    | Mock. No equivalent web APIs. |
+| ListView                 | ✓      |  |
+| Modal                    | ✘      | Not started ([#1020](https://github.com/necolas/react-native-web/issues/1020)). |

@@ -2,10 +2,10 @@
 
 # Database Configuration
 we have done database connectivity with mysqli object oriented.
-    1) database can be accessed by http://localhost/phpmyadmin
-    2) Database related configuration inside ./src/config/dbConfig.php
-    3) In order to connectivity with database we have made an globale variable in php to use mysqli object by name $GLOBALS['conn'] and same will be accessed using $GLOBALS['conn'].
-    4) We have made some global functions for using database query here are some of them rest can be viewed in configuration file.
+    * database can be accessed by http://localhost/phpmyadmin
+    * Database related configuration inside ./src/config/dbConfig.php
+    * In order to connectivity with database we have made an globale variable in php to use mysqli object by name $GLOBALS['conn'] and same will be accessed using $GLOBALS['conn'].
+    * We have made some global functions for using database query here are some of them rest can be viewed in configuration file.
        
 ### Functions
 

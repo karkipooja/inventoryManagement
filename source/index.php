@@ -1,3 +1,4 @@
-<?php 
-	header("location:./views");
-?>
+
+<?php
+  header("Location: ./views")
+ ?>

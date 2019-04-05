@@ -10,7 +10,7 @@ if ($GLOBALS['conn']->connect_error)
 {
     die("Connection failed: " . $GLOBALS['conn']->connect_error);
 }
-//echo "Connected successfully";
+echo "Connected successfully";
 function insertRecord()
 {
     $qry = "insert into users(email,password,firstName,lastname) values('sonusanwal65@gmail.com','abcd1234','Suraj','Sanwal')";

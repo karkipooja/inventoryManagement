@@ -15,6 +15,6 @@
 
 
       <!-----end of container---->  
-<?php
+      <?php
     require("footer.php");
 ?>

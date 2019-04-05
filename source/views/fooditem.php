@@ -1,3 +1,6 @@
+<?php
+require("header.php")
+?>
 <!DOCTYPE html>
 <html>
 
@@ -9,19 +12,9 @@
   <script src="../../assets/js/jQuery.js"></script>
   <script src="../../assets/js/bootstrap.min.js"></script>
   <style>
-    /* .thumbnail {
-     padding: 0 0 15px 0;
-     border: none;
-     border-radius: 0;
 
-   }
-.thumbnail img {
-     width: 60%;
-     height: 60%;
-     margin-bottom: 10px;
- }*/
     .img-thimbnail {
-      background-color: red;
+      background-color: grey;
       /* justify-content: center; */
       padding: 20px;
     }
@@ -38,49 +31,30 @@
     }
 
     .menu-div{
-      margin-top:10%
+      margin-top:10%;
     }
+    body{
+          background-color: #b76161;
+    }
+    .lead{color: #060606
+    }
+    .table {
+        color: #06060;
   </style>
 </head>
-
 <body>
-  <!-- <div class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2>
-  <h4>What we have created</h4>
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="food1.jpg" alt="Paris">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="food2.jpg" alt="New York">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="food3.jpg" alt="San Francisco">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-</div> -->
-  <div class="container text-center bg-yellow">
-    <h1>STOCK MANAGEMENT</h1><br>
-    <h2>to know stock availability</h2>
+ <div class="container text-center bg-yellow">
+    <h1><i><b>STOCK MANAGEMENT</b></i></h1><br>
+    <h2><b>To know stock availability</b></h2>
     <div class="row text-center slideanim slide menu-div">
       <div class="col-sm-4">
         <div class="thumbnail img-thimbnail">
           <img src="food1.jpg" class="img-responsive img-resize" alt="food1">
           <div class="btn-group btn-group-lg">
-            <button type="button" class="btn btn-primary btn-menu">VEGETARIAN</button>
+          <!--<button type="" button" class="btn btn-primary btn-menu">NON VEGETARIAN</button>-->
+          <a href="./table.php" class="btn btn-info" role="button">VEGETARIAN</a>
           </div>
-          <p>momo,pizza,chowmin,burger...etc</p>
+          <p class="lead"><b>momo,pizza,chowmin,burger...etc</b></p>
         </div>
       </div>
       <div class="col-sm-4">
@@ -88,10 +62,11 @@
           <img src="food2.jpg" class="img-responsive img-resize" alt="food2">
 
           <div class="btn-group btn-group-lg">
-            <button type="" button" class="btn btn-primary btn-menu">NON VEGETARIAN</button>
+            <!--<button type="" button" class="btn btn-primary btn-menu">NON VEGETARIAN</button>-->
+           <a href="table1.php" class="btn btn-info" role="button">NON VEGETARIAN</a>
           </div>
 
-          <p>chicken,mutton,chicken chowmin...etc</p>
+          <p class="lead"><b>chicken,mutton,chicken chowmin...etc</b></p>
         </div>
       </div>
       <div class="col-sm-4">
@@ -99,14 +74,13 @@
           <img src="food3.jpg" class="img-responsive img-resize" alt="food2">
           <div class="center">
             <div class="btn-group btn-group-lg">
-              <button type="button" class="btn btn-primary btn-menu">BEVERAGES</button>
+              <!--<button type="button" class="btn btn-primary btn-menu">BEVERAGES</button>-->
+              <a href="#" class="btn btn-info" role="button">BEVERAGES</a>
             </div>
-            <p>cold drink,ice cream,sHakes...etc</p>
+            <p class="lead" ><b>cold drink,ice cream,sHakes...etc</b></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</body>
-
-</html>
+>

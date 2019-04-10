@@ -1,5 +1,5 @@
 <?php
-require("header.php")
+//require("header.php")
 ?>
 <!DOCTYPE html>
 <html>
@@ -83,4 +83,5 @@ require("header.php")
       </div>
     </div>
   </div>
->
+</body>
+</html>

@@ -40,15 +40,6 @@ require ("header.php");
     </table>
   </div>
 </div>
-
-
-<<<<<<< HEAD
-      <!-----end of container---->  
-      <?php
-    require("footer.php");
-=======
-<!-----end of container---->
 <?php
 require ("footer.php");
->>>>>>> a930afabc7a7b054a54ecdf9f59fdf3c654824d6
 ?>

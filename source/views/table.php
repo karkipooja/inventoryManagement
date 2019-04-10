@@ -1,7 +1,19 @@
-<?php
-$title = "Veg";
-require_once("./header.php");
-?>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><?php echo $title;
+         ?> </title>
+<?php require_once ("../config/dbConfig.php"); ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+  <link href="../../assets/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <script src="../../assets/js/jQuery.js"></script>
+  <script src="../../assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
 <style>
 .col-25 {
   float: left;
@@ -34,6 +46,9 @@ require_once("./header.php");
     border-color: #121519;
   }
    body{
+    
+    background-color: #cec3c3;
+    
    }
 
    #myMenu{
@@ -82,11 +97,7 @@ require_once("./header.php");
   require("stock33.php");
 ?>
 </div>
-      <!-----end of container---->  
-      <?php
-    require("footer.php");
-?>
-
+    
 <script>
   function openMenu() {
     document.getElementById("myMenu").style.display ="block"

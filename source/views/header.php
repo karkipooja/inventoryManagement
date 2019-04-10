@@ -4,7 +4,7 @@
 <head>
   <title><?php echo $title;
          ?> </title>
-  <?php require_once ("../config/dbConfig.php"); ?>
+<?php require_once (""); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
   <link href="../../assets/css/bootstrap-glyphicons.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+ <header>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <!--<div class="container">
